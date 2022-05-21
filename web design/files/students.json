@@ -1,0 +1,57 @@
+/*A "students" collection
+It will have three student items (you can use fictional information)
+Each student will have 
+First Name
+Last Name
+Email
+GPA
+A list of courses taken (two or three courses per student)
+Each course will have 
+A number (like CIT205)
+A name (like "Web Development Tools") */
+
+
+
+{ 
+    "Students":[ 
+
+           { "First Name":"Kimberly",
+             "Last Name": "Mackey",
+             "CPA":3.6,
+             "Email": "Kimberlyspayde18@yahoo.com",
+                   "Classes": [
+                        {"ID":"CIT205", "Class":"Web Development"},
+                        {"ID":"CIT112", "Class":"Access"},
+                        {"ID":"CIT176", "Class":"Visual Basic"},
+                        {"ID":"ENG101", "Class":"College Comp"}
+                               ]
+            },  
+
+            { "First Name":"John",
+              "Last Name": "Doe",
+              "CPA":4.0,
+              "Email": "JohnDoe@gmail.com",
+                    "Classes": [
+                        {"ID":"CIT187", "Class":"HTML/CSS"},
+                        {"ID":"CIT117", "Class":"Microsoft Applications"},
+                        {"ID":"CIT105", "Class":"Operating Systems" },
+                        {"ID":"SPCH101", "Class":"Funf of Speech Comm" }
+
+                               ]    
+            },
+            { "First Name":"April",
+                "Last Name": "Sarah",
+                "CPA":2.1,
+                "Email": "Aprilsarah@gmail.com",
+                      "Classes": [
+                          {"ID":"CIT215", "Class":"Java Script"},
+                          {"ID":"CIT237", "Class":"Advanced Database Programming"},
+                          {"ID":"CIT250", "Class":"IT Analysis and Design" },
+                          {"ID":"ENG101", "Class":"College Comp" }
+  
+                                 ]    
+              }
+
+                 ]
+}
+
