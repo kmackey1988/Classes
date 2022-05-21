@@ -1,0 +1,5 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["19J5y"]); }
+
+__d("XOutHandler",["EventListener","XAsyncRequest","$"],(function(a,b,c,d,e,f){a={bindButton:function(a,c,d){a=b("$")(a);var e=b("EventListener").listen(a,"click",function(){b("$")(c).remove(),d&&new(b("XAsyncRequest"))(d).send(),e!==null&&e.remove()})}};e.exports=a}),null);
+__d("MessengerBusinessFaqTipClickFalcoEvent",["FalcoLoggerInternal","getSamplingPolicyConfig_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getSamplingPolicyConfig_DO_NOT_USE")("falco","messenger_business_faq_tip_click");c=b("FalcoLoggerInternal").create(a);e.exports=c}),null);
+__d("TBLMessengerBusinessFaqTipClickFalcoEventWrapper",["MessengerBusinessFaqTipClickFalcoEvent"],(function(a,b,c,d,e,f){a=function(){"use strict";function a(){}a.log=function(a){b("MessengerBusinessFaqTipClickFalcoEvent").log(function(){return a.data})};a.registerLogOnClick=function(a){a.element.addEventListener("click",function(){b("MessengerBusinessFaqTipClickFalcoEvent").log(function(){return a.data})})};return a}();e.exports=a}),null);
