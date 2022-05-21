@@ -1,0 +1,12 @@
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\bin\Debug\dietapp.exe.config
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\bin\Debug\dietapp.exe
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\bin\Debug\dietapp.pdb
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\bin\Debug\dietapp.xml
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\obj\Debug\dietapp.vbprojAssemblyReference.cache
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\obj\Debug\dietapp.Form1.resources
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\obj\Debug\dietapp.Form2.resources
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\obj\Debug\dietapp.Resources.resources
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\obj\Debug\dietapp.vbproj.GenerateResource.cache
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\obj\Debug\dietapp.exe
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\obj\Debug\dietapp.xml
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\dietapp\dietapp\obj\Debug\dietapp.pdb
