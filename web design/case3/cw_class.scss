@@ -1,0 +1,187 @@
+// Kimberly Mackey 
+// cit 205
+// 3/08/2020
+
+@import "cw_layouts.css";
+
+$primary-color: #979797;
+$body-color: #B4B4DF;
+$font-stack: Verdana, Geneva, sans-serif;
+$normal-weight: 400;
+$text-decoration: none;
+$footer-background-color: white;
+$header-background-color: #6161D3;
+$span-color: #FFFFFF;
+$mycolor: white;
+$padding: 5px;
+$link-color: #333333;
+$opacity: .08;
+$font-size: .8em;
+$size: .9em;
+$text-align: center;
+$liststyle: upper-roman;
+$liststyletype: upper-alpha;
+$line: 2em;
+$margin: 0px;
+$topmargin:5px; 
+$color: #656565;
+$text-decoratiom: underline;
+$background: #DCDCDC;
+$font: 2.2em;
+$lpadding: 10px;
+$fonts: 1.4;
+$align: baseline;
+
+@mixin important-text {
+   color: $color;
+   font-size: $font-size;
+   text-align: $text-align;
+   padding-top: 1px;
+   padding-bottom: 1px;
+
+}
+@mixin header-text {
+    font-size: 4vw;
+    color:#FFFFFF;
+    font-style: limelight, cursive;
+    margin: 0px;
+}
+
+
+
+
+html { 
+    background-color: $primary-color;
+}
+
+
+h1 + h2 {
+    font-weight: $normal-weight;
+
+}
+
+A {
+    text-decoration: $text-decoration;
+
+}
+
+footer {
+    @include important-text;
+    background-color: $footer-background-color;
+}
+
+body {
+    background-color: $body-color;
+    font: $font-stack;
+   
+    Header {
+       background-color: $header-background-color;
+
+            H1 {
+                @include header-text;
+                span {
+                    color: $span-color;
+                }
+
+            }
+
+    }
+
+}
+
+
+
+#mainlinks, a {
+
+             padding-top: $padding;
+             padding-bottom: $padding;
+                
+                A:visited + A:link{
+                    color:$mycolor;
+                    opacity:$opacity;
+
+                A:hover + A:Active{
+                    color: $mycolor;
+                    opacity:$opacity;
+                    background-color:$link-color;
+                }    
+                }
+                    
+                    
+                }
+
+            
+#outline {
+    color: $link-color;
+    font-size:$font-size;
+
+    h1 {
+        text-align: $text-align;
+    }
+
+}
+
+#outline > hr> ol {
+    list-style-type: $liststyle;
+    line-height: $line;
+    margin-top: $margin;
+    margin-bottom: $margin;
+    margin-left: $topmargin;
+    margin-right: $topmargin;
+
+}
+    
+#outline > hr> ol > ol {
+    list-style-type: $liststyletype;
+
+}
+
+#outline > hr> ol li a {
+    a:visited + a:link {
+        color:$color;
+
+    a:hover + a:active {
+        color:$header-background-color;
+        text-decoration: $text-decoration;
+        
+    }    
+
+    }
+}
+
+section {
+    background-color: $background;
+    header {
+
+     h1 {
+        font-size: $font;
+        padding-left: $lpadding;   
+       }
+    }
+}
+
+article h2 {
+    font-size: $fonts;
+}
+
+article >h2>P {
+    p::first-letter{
+        font-size: $line;
+        vertical-align: $align;
+
+    } 
+
+}
+
+aside{
+    h1{
+        font-size: $fonts;
+        text-align: $text-align;
+
+        p{
+            font-size:$size;
+         
+
+        }
+    }
+}
