@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		     <meta charset="UFT-8"> 
+		     <!-- 
+			 kimberly Mackey   
+			 08/31/2019
+			 CIT 187
+			 Basic HTML Document
+			 <title> HTML History and Info </title>
+			 -->
+		</head>
+		<body>
+			 <P> HTML is an acroym for Hypertext Markup Language. It is the language for the world wide web.</P> 
+			 <p> A web browser is a software program that allows people to acess webpages. The most popular web browsers are Google Chrome, Internet Explorer, Mozilla Firefox, and Safari. </p>
+			 <p> The first webpage was designed by Tim Berners-Lee. It was launched on August 6th, 1991. </p>
+			 <p> A two-sided element tag has content between the opening and the closing. A one sided element is empty. It doesn't contain any content therefor it stands alone. </p>
+			 <p> The head elemnt contains information about the html that is used by the browser but not displayed to the website visitor. </p> 
+             <p> The body element contains all the conent of an html document. </p>			 
+		</body>
+	</html>
