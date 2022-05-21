@@ -1,0 +1,204 @@
+<!-- https://www.w3schools.com/css/css_navbar_vertical.asp -->
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+      <meta charset='UTF-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <title>Weekly Planner</title>
+      <style>
+        html{
+          background-image: linear-gradient(rgb(60, 154, 241), rgb(149, 110, 240));
+        }
+        article{
+          border-bottom-style: solid;
+          border-color:silver;
+          background-image: linear-gradient(rgb(86, 168, 245), rgb(165, 131, 245));
+
+        
+        }
+        body div {
+          font-family: "Courier New", "Times New Roman" ;
+          font-size: 1.2em;
+        }
+        div {
+          text-align: center;
+        }
+
+        button{
+          background-image: linear-gradient(rgb(60, 154, 241), rgb(149, 110, 240));
+        }
+
+        div p {
+          font: bold;
+          font-style: italic;
+          color: rgb(182, 178, 178);
+        }
+
+        h2{
+            color: rgb(15, 66, 206);
+            text-align: center;
+        }
+
+        section{
+          border-style: outset;
+        }
+
+        section p {
+          display:block;
+          text-align: center;
+          padding: 16px 64px;
+
+        }
+
+        ul {
+          list-style-type: none;
+          text-align: center;
+
+        }
+
+        li a {
+          display: block;
+          color: rgb(50,50,50);
+          padding: 8px 16px 8px 16px;
+          text-decoration: none;
+        }
+
+       
+
+        li a:hover{
+          background-image: linear-gradient(rgb(60, 154, 241), rgb(149, 110, 240));
+          color: white;
+        }
+    </style>
+  </head>
+
+
+  <body onload="startTime(); startDate()">
+
+    <article> 
+      <div class="container">
+        <div id="date"></div>
+        <div id="display"></div>
+        <div id="content">
+          <p id="quote">"the people who are crazy enough to think they can change the world are the ones who do." <br/>- Steve Jobs</p>
+        </div>
+      </div>
+      <div id="b-nav">
+        <ul>
+          <button id="gen" onclick="genQuote()">New Quote</button>
+        </ul>
+      </div>
+
+      <script>
+          function startTime() {
+            var today=new Date();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            var ampm = "";
+            m = checkTime(m);
+
+            if (h > 12) {
+              h = h - 12;
+              ampm = " PM";
+            } else if (h == 12){
+                h = 12;
+              ampm = " AM";
+            } else if (h < 12){
+                ampm = " AM";
+            } else {
+                ampm = "PM";
+            };
+          
+          if(h==0) {
+            h=12;
+          }
+          
+          document.getElementById('display').innerHTML = h+":"+m+ampm;
+          var t = setTimeout(function(){startTime()},500);
+        }
+
+          function checkTime(i) {
+              if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+          }
+
+          function genQuote() {
+            var randNum = Math.floor(Math.random() * 8) + 1;
+            document.getElementById('quote').innerHTML = quotes[randNum];
+            var tweetQuote = quotes[randNum].split(' ').join('%20');
+            tweetQuote = tweetQuote.split('<br>').join('');
+            tweetQuote = "https://twitter.com/intent/tweet?text=" + tweetQuote.split('"').join('')
+            $('.twitter-share-button').attr('href', tweetQuote);
+          }
+
+        //quote array
+        var quotes = ["Blank", "\"Perfection is not attainable, but if we chase perfection we can catch excellence.\"<br> - Vince Lombardi", "\"Either I will find a way, or I will make one.\"<br> - Philip Sidney", 
+        "\"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.\"<br>- Thomas A. Edison", 
+        "\"You are never too old to set another goal or to dream a new dream.\"<br>- C.S Lewis", "\"If you can dream it, you can do it.\"<br>- Walt Disney", 
+        "\"Never give up, for that is just the place and time that the tide will turn.\"<br>- Harriet Beecher Stowe", "\"I can’t change the direction of the wind, but I can adjust my sails to always reach my destination.\"<br>- Jimmy Dean", 
+        "\"If you always put limit on everything you do, physical or anything else. It will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them.\"<br>- Bruce Lee",
+        "\"Believe you can and you’re halfway there.\"<br>- Theodore Roosevelt", "\"Strive not to be a success, but rather to be of value.\"<br>- Albert Einstein", 
+        "\"I am not a product of my circumstances. I am a product of my decisions.\"<br>- Stephen Covey", "\"The most difficult thing is the decision to act, the rest is merely tenacity.\"<br>- Amelia Earhart",
+        "\"Change your thoughts and you change your world.\"<br>- Norman Vincent Peale", "\"Everything has beauty, but not everyone can see. \"<br>- Confucius",
+        "\"The only person you are destined to become is the person you decide to be.\"<br>- Ralph Waldo Emerson", "\"We can’t help everyone, but everyone can help someone. \"<br>- Ronald Reagan",];
+
+          //date
+          function startDate() {
+            var d = new Date();
+            var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.getElementById("date").innerHTML = days[d.getDay()]+" | "+[d.getMonth()+1]+"/"+d.getDate()+"/"+d.getFullYear();
+          }
+
+
+      </script>
+    </article>  
+
+    <br> </br>
+
+    
+    <section> 
+      <h2> Useful Information and resources </h2>
+        <p> 
+          
+          It is important when trying to eat healthy and exersise to calculate
+          the correct amount of callories that you are burning so you are cosuming the 
+          correct amount of callories for your weight loss goal. Here is a great Calculator
+          to help you figure out how many calories you will be burning with each type of workout.
+
+          <ul> 
+            <li><a href='https://caloriecontrol.org/healthy-weight-tool-kit/get-moving-calculator/'>Activity Calculator</a></li>
+          </ul>
+          
+
+        </p>  
+        
+        <p> 
+          
+            Your BMI (Body Mass Index) is a tool used that devids your weight by your height and is used to assist with screening method for determing weight catergory.
+            It's a good idea to keep an eye on your bmi during your weight loss journy. 
+            
+            <ul> 
+              <li><a href='https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/english_bmi_calculator/bmi_calculator.html'>BMI Calculator</a></li>
+            </ul> 
+          
+        </p>  
+
+          
+
+        <p> 
+          
+          Here are some other great resources from the fda. 
+
+          <ul> 
+            <li><a href='https://www.fda.gov/food'>FDA Food Information</a></li>
+            <li><a href='https://www.fda.gov/food/nutrition-education-resources-materials/new-nutrition-facts-label'>Nutritional Information</a></li>
+          </ul>
+          
+
+        </p>  
+
+    </section>
+  </body>
+</html>
