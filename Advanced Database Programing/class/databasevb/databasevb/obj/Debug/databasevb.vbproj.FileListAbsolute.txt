@@ -1,0 +1,16 @@
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\databasevb.vbprojAssemblyReference.cache
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\MainWindow.g.vb
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\Application.g.vb
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\databasevb_MarkupCompile.cache
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\databasevb_MarkupCompile.lref
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\bin\Debug\databasevb.exe.config
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\bin\Debug\databasevb.exe
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\bin\Debug\databasevb.pdb
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\bin\Debug\databasevb.xml
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\MainWindow.baml
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\databasevb.g.resources
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\databasevb.Resources.resources
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\databasevb.vbproj.GenerateResource.cache
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\databasevb.exe
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\databasevb.xml
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\databasevb\databasevb\obj\Debug\databasevb.pdb
