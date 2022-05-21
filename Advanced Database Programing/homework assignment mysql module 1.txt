@@ -1,0 +1,35 @@
+1	Write a SQL statement that will give the result of: How many patients are there?
+	SELECT COUNT(PatientID) FROM tblPatient;
+	
+2	Write a SQL statement that will give the result of: How many patients are there in Windsor?
+	SELECT COUNT(PatientID) FROM tblPatient WHERE City="Windsor";
+	
+
+3	Write a SQL statement that will give the result of: First Name, Last Name, and DOB for Patients who live in Windsor.
+	SELECT FirstName, LastName, DOB FROM tblPatient WHERE City="Windsor";
+	
+
+
+4	Write a SQL statement that will give the result of: All Patient info for Patients who live in Windsor whose last name is between C and M.
+	SELECT * FROM tblPatient Where City="Windsor" , LastName BETWEEN 'C' and 'M';
+
+
+5	Write a SQL statement that will give the result of: First Name, Last Name, and DOB Patients who live in Windsor whose last name is between C and M in alphabetical order FN, LN.
+	SELECT FirstName, LastName, DOB FROM tblPatient WHERE City="Windsor" LastName BETWEEN 'C' and 'M' ORDER BY FirstName ASC, LastName ASC;
+
+
+6	Write a SQL statement that will give the result of: First Name, Last Name, and DOB Patients who live in Windsor who are 40 or older in alphabetical order LN, FN, DOB.
+	SELECT FirstName, LastName, SYSDATE(),DOB,DATEDIFF(SYSDATE(),DOB)/365 AS AGE FROM tblPatient WHERE City="Windsor", (DATEDIFF(SYSDATE(), DOB)/365)>=40 ORDER BY FirstName ACS, LastName ACS, DOB ASC;
+
+7	Write a SQL statement that will give the result of: Patient ID, Last Name, First Name, Visit ID, Invoice Date, Invoice Amount, Invoice Item ID, and Invoice Paid Order by Last Name First Name.
+	SELECT PatientID.tblPatient, LastName.tblPatient, FirstName.tblPatient, VisitID.tblVisit, InvoiceDate.tblBilling, InvoiceAmt.tblBilling, InvoiceItem.tblBilling, InvoicePaid.tblBilling, FROM tblPatient INNER JOIN tblVisit ON PatientID.tblPatient = PatientID.tblVisit INNER JOIN tblBilling on VisitID.tblVisit = VisitID.tblBilling ORDER BY LastName ASC, FirstName ASC;
+
+
+8	Write a SQL statement that will give the result of: Patient ID, Last Name, First Name, Visit ID, Invoice Date, Invoice Amount, Invoice Item ID, and Invoice Paid Order by Last Name First Name sorted by Invoice Amt Largest to smallest.
+	SELECT PatientID.tblPatient, LastName.tblPatient, FirstName.tblPatient, VisitID.tblVisit, InvoiceDate.tblBilling, InvoiceAmt.tblBilling, InvoiceItem.tblBilling, InvoicePaid.tblBilling, FROM tblPatient INNER JOIN tblVisit ON PatientID.tblPatient = PatientID.tblVisit INNER JOIN tblBilling on VisitID.tblVisit = VisitID.tblBilling ORDER BY LastName ASC, FirstName ASC, InvoiceAmt DESC;
+
+9	Write a SQL statement that will give the result of:  Patient ID, Last Name, First Name, Visit ID, Invoice Date, Invoice Amount, Invoice Item ID, and Invoice Paid Order by Last Name First Name sorted by Invoice Amt Largest to smallest showing only unpaid invoices.
+	SELECT PatientID.tblPatient, LastName.tblPatient, FirstName.tblPatient, VisitID.tblVisit, InvoiceDate.tblBilling, InvoiceAmt.tblBilling, InvoiceItem.tblBilling, InvoicePaid.tblBilling, FROM tblPatient INNER JOIN tblVisit ON PatientID.tblPatient = PatientID.tblVisit INNER JOIN tblBilling on VisitID.tblVisit = VisitID.tblBilling WHERE InvoicePaid="No" ORDER BY LastName ASC, FirstName ASC, InvoiceAmt DESC;
+
+
+10	Write a SQL statement that will give the result of: Patient ID, Last Name, First Name, Phone number, and Email for patients that have never had a visit.
