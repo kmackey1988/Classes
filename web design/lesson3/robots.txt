@@ -1,0 +1,12 @@
+User-agent: Googlebot
+Disallow: /images/
+Disallow: aboutus
+
+User-agent: Bingbot
+Disallow: /images/
+Disallow: aboutus
+
+User-agent: msnbot
+Disallow: /images/
+Disallow: aboutus
+Disallow: 
