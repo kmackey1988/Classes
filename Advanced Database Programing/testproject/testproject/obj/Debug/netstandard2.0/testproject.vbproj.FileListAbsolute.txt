@@ -1,0 +1,8 @@
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\testproject\testproject\bin\Debug\netstandard2.0\testproject.deps.json
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\testproject\testproject\bin\Debug\netstandard2.0\testproject.dll
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\testproject\testproject\bin\Debug\netstandard2.0\testproject.pdb
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\testproject\testproject\obj\Debug\netstandard2.0\testproject.vbprojAssemblyReference.cache
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\testproject\testproject\obj\Debug\netstandard2.0\testproject.AssemblyInfoInputs.cache
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\testproject\testproject\obj\Debug\netstandard2.0\testproject.AssemblyInfo.vb
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\testproject\testproject\obj\Debug\netstandard2.0\testproject.dll
+C:\Users\youkn\Documents\schoolwork\Advanced Database Programming\testproject\testproject\obj\Debug\netstandard2.0\testproject.pdb
