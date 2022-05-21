@@ -1,0 +1,4 @@
+function answer2() {document.getElementById("answer2").innerHTML = "JavaScript runs in the web browser on your computer, phone, and tablets. You don't have to download it and there is no cost to use it. JavaScript is used to program how the web pages behave. I can change css, hide or show html elements. People often confused Java and Javascript but they aren't related.";}
+
+function answer3() {document.getElementById("answer3").innerHTML = "Some major libraries Javascript are D3.js, Parsley, jQuery, QUnit and react. Some javascript frameworks include angular, ember.js,node.js and vau.js. Major websites like facebook, youtube, google maps, and ebay include javascript to function.";}
+        

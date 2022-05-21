@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+         input:invalid {
+         border: 2px solid red;
+              }
+         input[type=text]:disabled {
+         background: #dddddd;
+              }
+    </style>
+
+  </head>
+  <body>
+
+     <form name="myForm" method="post" id= "form"  onsubmit="return validateForm()">
+        <p> Customer Information </p><br>
+            <!-- first name -->
+          <label for="firstname">First Name</label><br>
+          <input type="text" name="firstname" id="fnameID"><br>
+
+          <!-- Last Name -->
+          <label for="lastname">Last Name</label><br>
+          <input type="text" name="lastname" id="lnameID"><br>
+
+          <!-- Email Address -->
+          <label for="emailaddress">Email Address</label><br>
+          <input type="email" name="emailaddress" id="emailID"><br>
+
+          <!-- Age -->
+          <label for="age">Age</label><br>
+          <input type="text" name="age" id="ageID" maxlength="3" min="18" max="120"><br>
+  
+          <!-- Payment method CC or PP -->
+          <p>Payment Method:</p><br>
+          <label for="card">Credit Card</label><br>
+          <input type="radio" id="cc" name="payment"><br>
+           
+          <label for="pp">Paypal</label><br>
+          <input type="radio" id="pp" name="payment" value="paypal"><br>
+          
+          <!-- credit card number -->
+          <label for="ccnum">credit card numnber</label><br>
+          <input id="ccn" name="ccnum" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"><br>
+          
+          <!-- month -->
+          <label for="month">Month</label><br>
+          <input type="number" name="month" min="1" max="12"><br>
+
+          <!-- year -->
+          <label for="year">Year</label><br>
+         <input type="number" name="year" min="2020"  max ="min+ 20" maxlength="4" pattern="\d{4}"  placeholder="xxxx"><br>
+         
+
+         <input type="submit" value="Submit">
+  
+      </form>
+      <script>
+           function validateForm() {
+          // first name
+           var f = document.forms["myForm"]["firstname"].value;
+           if (f == "") {
+           alert("First Name must be filled out");
+            return false;
+                        }
+                                  
+           
+           // last name
+           var l = document.forms["myForm"]["lastname"].value;
+           if (l == "") {
+           alert("Last Name must be filled out");
+           return false;
+                        }
+                                  
+          // email 
+           var e = document.forms["myForm"]["emailaddress"].value;
+           var emailReq = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+           var emailadd = emailReq.test(e);
+           if (!emailadd){ 
+               if (e == "") {
+                  alert("Email Name must be filled out"); 
+                          }
+            else { alert("Email format is invalid");
+                }
+            return false;    
+           } 
+           
+           
+           //age
+           var a = document.forms["myForm"]["age"].value; 
+           var ageReq = /^[0-9]{2,3}/;
+           var ageadd = ageReq.test(age);
+               if (!ageadd){
+                  if (a == ""){
+                     alert("Age Name must be filled out");
+                               }
+                  if (a < 18){
+                           alert("Age must be older than 18.");
+                                   }
+                  if (a > 120){
+                      alert("Age cant be over 120");
+                             }  
+               else { alert("Age format is invalid");
+                }                
+               return false;    
+                            }
+           }
+              
+      </script>
+
+</body>
+</html>

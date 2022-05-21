@@ -1,0 +1,66 @@
+
+{ 
+    "Favbooks":[
+    {
+        "Book Number": "1",
+        "Book Name": "Harry Potter",
+        "Author": "J.K Rowling",
+        "Summary":[
+             "Harrys parents are murdered.",
+              "He is forced to grow up with absive relatives and finds out",
+               "he is a wizzard. He also learns that his parents murder was actually",
+               "trying to kill him and now Harry must defeat the dark wizzard"
+
+        ] 
+    
+    },
+    {
+        "Book Number": "2",
+        "Book Name": "Twilight",
+        "Author": "Stephenie Meyer",
+        "Summary": [
+            "Teenage girls moves in with dad and meets a vampire posing as a student.",
+            "She becomes engrossed in him and learns he sparkels in the sunlight.",
+            "They get married and have a baby which ends her life, but then she becomes a vampire also."
+
+        ] 
+    },
+    {
+        "Book Number": "3",
+        "Book Name": "Pride and Prejudice",
+        "Author": "Jane Austin",
+        "Summary":[
+            "Girl meets guy. Guy rejects girl and girl hates guy.",
+            "Guy falls in love with girl and proposes marriage but she says no.",
+            "He does nice things, she relizes shes wrong about guy so girl marries guy."
+
+        ] 
+    },
+    {
+        "Book Number": "4",
+        "Book Name": "Ready player one",
+        "Author": "Ernest Cline",
+        "Summary":[
+            "Rich dude dies and makes a video game contests for someone to",
+            "inherent his company and money. Poor, looser, nerdy kid finds first clue,",
+            "becomes popular and falls in love with girl. Girl wants to win also so pushes",
+            "boy away. She and a group of friends help poor kid win contest and all become rich.",
+            "Boy gets girl."
+
+        ] 
+    },
+    {
+        "Book Number": "5",
+        "Book Name": "Hunger Games",
+        "Author": "Suzanne Collins",
+        "Summary":[
+            "Girl forced by her goverment into an arena with 23 other kids to fight",
+            "to death. She and her friend have fake romance and win, goverment gets mad",
+            "so they get thrown into another arena but they are rescued by rebels.",
+            "They declare war and go into the capitol and overthrow the goverment.",
+            "Girl and fake lover fall in love and go home and start a family."
+
+        ] 
+    }
+]
+}

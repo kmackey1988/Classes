@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<!-- Kimberly Mackey 
+     cit 215
+     09/22/2020 -->
+<html>
+    <head>
+        
+        <title>Homework questions</title>
+
+    </head>
+
+    <body>
+        <dl>
+            <dt>Question One</dt>
+                <dd id="q1" onmouseover="mouseOver()" >List three JavaScript coding Best Practices</dd>
+               
+            <dt> Question 2 </dt>
+                <dd id="q2" onmouseover="mouseOver2()">List three JavaScript style Best Practices</dd>
+            <dt>question 3</dt>
+                 <dd id="q3" onmouseover="mouseOver3()"> List three JavaScript performance Best Practices </dd>
+         
+        </dl>
+
+        <script>
+                     function mouseOver() {
+                     document.getElementById("q1").innerHTML = "<br> JavaScript is to avoid global variables since they </br>"  +
+                                                               "<br> can be overwritten; always declare a local variable </br>" +
+                                                               "<br> because if you don’t they can be become a global </br>" +
+                                                               "<br> variable. Lastly is to never declare number, string, </br>" +
+                                                               "<br> or boolean objects, you must treat numbers, strings </br>" +
+                                                               "<br>  or booleans as primitive values and not as objects. </br>"; } 
+
+                      mouseOver2 = () => {
+                     document.getElementById("q2").innerHTML = "<br> Three things for best style with js is to put declarations </br>"  +
+                                                               "<br> on top because it makes your code cleaner, makes It </br>" +
+                                                               "<br> faster to find them and helps make sure you don’t create </br>" +
+                                                               "<br> any unwanted global variables. Always put spaces around  </br>" +
+                                                               "<br> operations and after commas and  you should keep Line</br>" +
+                                                               "<br>  Length less than 80 characters so that way its readable.</br>"; } 
+
+                    mouseOver3 = () => 
+                     document.getElementById("q3").innerHTML = "<br> Three things to help with JavaScript performances is to </br>"  +
+                                                               "<br> reduce activity in loops, if you can put a statement outside </br>" +
+                                                               "<br> of a loop instead of inside the loop the program will run faster.</br>" +
+                                                               "<br> Reduce DOM access since it takes longer to run an html </br>" +
+                                                               "<br> dom than js statements so if you have to access DOM </br>" +
+                                                               "<br>  multiple times than make a local var for it. </br>" +
+                                                               "<br>  Also Avoiding any using Unnecessary Variables. </br>";                                          
+    
+        </script>
+
+    </body>
+</html>
+

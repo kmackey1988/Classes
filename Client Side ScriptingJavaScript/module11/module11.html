@@ -1,0 +1,50 @@
+<!--
+  Name: Kimberly Mackey
+  Date: November 22
+  class: CIT 215
+  Module 11 assignment
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modile 11 Json</title>
+</head>
+<body>
+    <h2>Favorite books</h2>
+    <input type="button" value="Show Table" onclick="mytable()">
+    <p id="table"></p>
+
+
+
+    <script>
+        function mytable() { 
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                 if (this.readyState == 4 && this.status == 200) { 
+                 var obj, x, y;     
+                 myObj = JSON.parse(this.responseText);
+
+                 mybooks = "<table border=1><thead><tr><td>Book Number</td><td>Type</td><td>Book Name</td>" +
+                    "<td>Author</td><td>Recovery</td><td>Summary</td></tr></thead>";
+                    for (x in myObj){
+                            mybooks += "<tr>";
+
+                        for (y in myObj[x]){
+                            mybooks += "<td>" + myObj[x][y] + "</td>";
+                         }   
+                         mybooks += "</tr>";
+                       }
+
+                    mybooks += "</table>";
+                    document.getElementById("table").innerHTML = mybooks;
+                 }    
+            };
+            xmlhttp.open("GET", "module11.json", true);
+            xmlhttp.send();
+            }
+        
+        </script>
+</body>
+</html>
